@@ -2,7 +2,7 @@ COMPRESSED_FOLDER_NAME="compressed"
 TAR_GZ=".tar.gz"
 DOCS="docs/"
 
-PROBLEM_ID="1-A" # Will be of the format <contest-name>-<problem-name>
+PROBLEM_ID="100-A" # Will be of the format <contest-name>-<problem-name>
 CONTEST_NAME=$(echo $PROBLEM_ID | awk -F - '{print $1}')
 PROBLEM_NAME=$(echo $PROBLEM_ID | awk -F - '{print $2}')
 
@@ -19,6 +19,8 @@ mkdir -p $DOCS$COMPRESSED_FOLDER_NAME/$CONTEST_NAME
 tar czf "$DOCS$COMPRESSED_FOLDER_NAME/$CONTEST_NAME/$PROBLEM_NAME$TAR_GZ" "$CONTEST_NAME/$PROBLEM_NAME"
 
 mv $CONTEST_NAME $DOCS$CONTEST_NAME
+
+cp README.md $DOCS
 
 git config user.name "MadaraUchiha-314" && git config user.email "rohithr31@gmail.com"
 git add .
