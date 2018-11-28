@@ -27,5 +27,4 @@ This project is at its very early stages and requires a lot of contribution from
 - [ ] Add setter and tester solutions.
 - [ ] Add Encryption.
 
-
 [markdown syntax]: https://guides.github.com/features/mastering-markdown/
