@@ -6,12 +6,7 @@ CONTEST_NAME=$(echo $PROBLEM_ID | awk -F - '{print $1}')
 PROBLEM_NAME=$(echo $PROBLEM_ID | awk -F - '{print $2}')
 
 git config user.name "MadaraUchiha-314" && git config user.email "rohithr31@gmail.com"
-git fetch --all
 git add .
-git stash
-git checkout gh-pages
-rm "$COMPRESSED_FOLDER_NAME/$CONTEST_NAME/$PROBLEM_NAME$TAR_GZ"
-git stash pop
-git add .
+git pull --no-edit origin gh-pages
 git commit -m "[CI SKIP] Deploying the problem"
 git push -q https://${GITHUB_PERSONAL_TOKEN}@github.com/open-competitive-coding/problem-set.git gh-pages
