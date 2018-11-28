@@ -1,4 +1,4 @@
-git config --global user.name "MadaraUchiha-314" && git config --global user.email "rohithr31@gmail.com"
+git config user.name "MadaraUchiha-314" && git config user.email "rohithr31@gmail.com"
 git fetch --all
 git add .
 git checkout gh-pages
