@@ -18,8 +18,9 @@ mkdir -p $DOCS$COMPRESSED_FOLDER_NAME/$CONTEST_NAME
 
 tar czf "$DOCS$COMPRESSED_FOLDER_NAME/$CONTEST_NAME/$PROBLEM_NAME$TAR_GZ" "$CONTEST_NAME/$PROBLEM_NAME"
 
-mv $PROBLEM_FOLDER $DOCS$PROBLEM_FOLDER
+mv $CONTEST_NAME $DOCS$CONTEST_NAME
 
 git config user.name "MadaraUchiha-314" && git config user.email "rohithr31@gmail.com"
 git add .
 git commit -m "[CI SKIP] Pushing the test cases"
+git push -q https://${GITHUB_PERSONAL_TOKEN}@github.com/open-competitive-coding/problem-set.git master
