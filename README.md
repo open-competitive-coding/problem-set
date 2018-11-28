@@ -17,8 +17,9 @@ problem-set
 ## How to submit a problem ?
 Create a new contest folder and add the problems in the specified format. We will take care of the rest.
 
-The problem statement for an example contest say `1` with problem name `A` will be accessible at :
+The problem statement for an example contest say `1` with problem name `A` will be accessible at : https://open-competitive-coding.github.io/problem-set/1/A/
 
+and similarly for other contest and problems.
 
 ## Current State
 This project is at its very early stages and requires a lot of contribution from the open-source community. So feel free to send a Pull Request to enable any of the features.
