@@ -1,4 +1,4 @@
-# probblem-set
+# problem-set
 
 This is the repository of all the problems. Problems are specified using the [markdown syntax] and follow this structure.
 ```
@@ -7,8 +7,8 @@ problem-set
                         |____<problem-name>
                                         | README.md
                                         |___inputs
-                                                |___in0.txt
-                                                |___in1.txt
+                                        |       |___in0.txt
+                                        |       |___in1.txt
                                         |___outputs
                                                 |___out0.txt
                                                 |___out1.txt
