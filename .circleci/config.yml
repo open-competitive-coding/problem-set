@@ -1,0 +1,22 @@
+# trigger build
+version: 2
+debug: true
+jobs:
+  build:
+    docker:
+      - image: circleci/python:2.7
+    steps:
+      - checkout
+      - run: bash scripts/accept-problem.sh
+      - run: bash scripts/push-problem.sh
+      - store_artifacts:
+          path: .
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build
