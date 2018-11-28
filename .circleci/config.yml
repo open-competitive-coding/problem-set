@@ -9,6 +9,8 @@ jobs:
       - checkout
       - run: bash scripts/accept-problem.sh
       - run: bash scripts/push-problem.sh
+      - store_artifacts:
+          path: .
 workflows:
   version: 2
   build:
