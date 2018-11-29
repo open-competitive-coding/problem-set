@@ -2,7 +2,7 @@ COMPRESSED_FOLDER_NAME="compressed"
 TAR_GZ=".tar.gz"
 DOCS="docs/"
 
-PROBLEM_ID=$1 # Will be of the format <contest-name>-<problem-name>
+PROBLEM_ID=$(cat problem-name.txt) # Will be of the format <contest-name>-<problem-name>
 CONTEST_NAME=$(echo $PROBLEM_ID | awk -F - '{print $1}')
 PROBLEM_NAME=$(echo $PROBLEM_ID | awk -F - '{print $2}')
 

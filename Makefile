@@ -1,2 +1,4 @@
 submit:
-	bash scripts/accept-problem.sh $(problem-name)
+	echo $(problem-name) > problem-name.txt
+accept:
+	bash scripts/accept-problem.sh
