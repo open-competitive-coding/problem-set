@@ -17,7 +17,7 @@ problem-set
 
 # Where are all the problems ?
 
-https://open-competitive-coding.github.io/problem-set/contests/
+[https://open-competitive-coding.github.io/problem-set/contests/](https://open-competitive-coding.github.io/problem-set/contests/)
 
 ## How to submit a problem ?
 Create a new contest folder and add the problems in the specified format. We will take care of the rest.
