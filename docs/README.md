@@ -4,6 +4,7 @@ This is the repository of all the problems. Problems are specified using the [ma
 ```
 problem-set
         |___<contest-name>
+                        | README.md
                         |____<problem-name>
                                         | README.md
                                         |___inputs
@@ -16,6 +17,11 @@ problem-set
 
 ## How to submit a problem ?
 Create a new contest folder and add the problems in the specified format. We will take care of the rest.
+
+Say you have made the above folder structure and you want to submit a problem :
+```
+make problem-name=1-A
+```
 
 The problem statement for an example contest say `1` with problem name `A` will be accessible at : https://open-competitive-coding.github.io/problem-set/1/A/
 

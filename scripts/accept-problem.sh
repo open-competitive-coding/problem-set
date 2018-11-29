@@ -20,6 +20,8 @@ tar czf "$DOCS$COMPRESSED_FOLDER_NAME/$CONTEST_NAME/$PROBLEM_NAME$TAR_GZ" "$CONT
 
 mv $CONTEST_NAME $DOCS$CONTEST_NAME
 
+python scripts/add-problem-set.py $PROBLEM_ID
+
 cp README.md $DOCS
 
 git config user.name "MadaraUchiha-314" && git config user.email "rohithr31@gmail.com"
