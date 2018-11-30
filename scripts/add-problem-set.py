@@ -14,7 +14,7 @@ TH = "<th>{data}</th>"
 ANCHOR = "<a href=\"{href}\">{data}</a>"
 
 PROBLEM_URL = "https://open-competitive-coding.github.io/problem-set/{contest_id}/{problem_id}/"
-STANDINGS_URL = "https://open-competitive-coding.github.io/website/Contest-{contetst_id}"
+STANDINGS_URL = "https://open-competitive-coding.github.io/website/Contest-{contest_id}"
 
 def add_to_json(problem_id) :
     contest_name, problem_name = problem_id.split("-")
