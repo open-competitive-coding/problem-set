@@ -14,6 +14,7 @@ TH = "<th>{data}</th>"
 ANCHOR = "<a href=\"{href}\">{data}</a>"
 
 PROBLEM_URL = "https://open-competitive-coding.github.io/problem-set/{contest_id}/{problem_id}/"
+STANDINGS_URL = "https://open-competitive-coding.github.io/website/Contest-{contetst_id}"
 
 def add_to_json(problem_id) :
     contest_name, problem_name = problem_id.split("-")
@@ -39,6 +40,7 @@ def convert_to_readme(content) :
         cols = ""
         cols += TH.format(data="Contest")
         cols += TH.format(data="Problems")
+        cols += TH.format(data="Standings")
 
         table_header_row = TR.format(cols=cols)
 
@@ -51,6 +53,8 @@ def convert_to_readme(content) :
                 problems += ANCHOR.format(href=PROBLEM_URL.format(contest_id=contest, problem_id=problem), data=problem) + " , "
             problems = problems[:-2]
             cols += TD.format(data=problems)
+            statndings_url = ANCHOR.format(href=STANDINGS_URL.format(contest_id=contest), data="Scoreboard")
+            cols += TD.format(data=)
             table_body += TR.format(cols=cols)
 
         table = TABLE.format(rows=table_header_row+table_body)
