@@ -54,6 +54,7 @@ def convert_to_readme(content) :
             problems = problems[:-2]
             cols += TD.format(data=problems)
             statndings_url = ANCHOR.format(href=STANDINGS_URL.format(contest_id=contest), data="Scoreboard")
+            cols += statndings_url
             cols += TD.format(data=)
             table_body += TR.format(cols=cols)
 
